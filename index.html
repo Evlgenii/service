@@ -6,9 +6,10 @@
 
 <title>Service Almaty | Ремонт светового и звукового оборудования</title>
 
-<meta name="description" content="Ремонт профессионального светового и звукового оборудования. LightSky, Robe, Claypaky, ACME, DTS, L-Acoustics, d&b audiotechnik. Алматы.">
+<meta name="description" content="Ремонт профессионального светового и звукового оборудования в Алматы. LightSky, Robe, Claypaky, ACME, DTS, L-Acoustics, d&b audiotechnik.">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -39,8 +40,8 @@ left:0;
 width:100%;
 background:rgba(15,17,23,.95);
 backdrop-filter:blur(10px);
-z-index:1000;
 border-bottom:1px solid #222;
+z-index:1000;
 }
 
 .nav{
@@ -56,25 +57,27 @@ font-weight:bold;
 color:#25D366;
 }
 
-.nav a{
+.nav-links{
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
 color:white;
 text-decoration:none;
-margin-left:20px;
 }
 
 .hero{
 min-height:100vh;
 display:flex;
 align-items:center;
+justify-content:center;
 text-align:center;
+padding:100px 20px;
 background:
 linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1800&auto=format&fit=crop")
+url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=2000&auto=format&fit=crop")
 center center/cover;
-}
-
-.hero-content{
-width:100%;
 }
 
 .hero h1{
@@ -86,23 +89,18 @@ margin-bottom:20px;
 max-width:800px;
 margin:auto;
 font-size:22px;
-color:#d0d0d0;
+color:#ddd;
 margin-bottom:35px;
 }
 
 .btn{
 display:inline-block;
-padding:16px 35px;
+padding:15px 35px;
 background:#25D366;
-color:#fff;
+color:white;
 text-decoration:none;
 border-radius:50px;
 font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
 }
 
 section{
@@ -110,27 +108,27 @@ padding:90px 0;
 }
 
 .section-title{
-font-size:40px;
 text-align:center;
+font-size:40px;
 margin-bottom:50px;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+gap:20px;
 }
 
 .card{
 background:#171b24;
-padding:30px;
-border-radius:16px;
+padding:25px;
+border-radius:15px;
 border:1px solid #252a35;
 }
 
 .card h3{
-margin-bottom:15px;
 color:#25D366;
+margin-bottom:15px;
 }
 
 .card ul{
@@ -138,21 +136,21 @@ list-style:none;
 }
 
 .card li{
-padding:5px 0;
+padding:6px 0;
 }
 
 .brands{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:15px;
+gap:12px;
 }
 
 .brand{
-padding:12px 20px;
+padding:10px 18px;
+border-radius:25px;
 background:#171b24;
-border-radius:30px;
-border:1px solid #252a35;
+border:1px solid #2d3340;
 }
 
 .gallery{
@@ -162,15 +160,23 @@ gap:20px;
 }
 
 .gallery-item{
-height:220px;
-background:#171b24;
+height:250px;
+overflow:hidden;
 border-radius:15px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:20px;
-color:#888;
+background:#171b24;
 border:1px solid #252a35;
+}
+
+.gallery-item img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+transition:0.3s;
+}
+
+.gallery-item img:hover{
+transform:scale(1.05);
 }
 
 .advantages{
@@ -183,8 +189,8 @@ gap:20px;
 background:#171b24;
 padding:25px;
 border-radius:15px;
-text-align:center;
 border:1px solid #252a35;
+text-align:center;
 }
 
 .contact{
@@ -204,21 +210,21 @@ right:20px;
 bottom:20px;
 width:65px;
 height:65px;
-border-radius:50%;
 background:#25D366;
+border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:30px;
 text-decoration:none;
+font-size:28px;
 color:white;
-box-shadow:0 0 20px rgba(37,211,102,.4);
+box-shadow:0 0 20px rgba(37,211,102,.5);
 }
 
 footer{
 background:#090b10;
-text-align:center;
 padding:25px;
+text-align:center;
 color:#777;
 }
 
@@ -239,15 +245,22 @@ font-size:30px;
 .phone{
 font-size:24px;
 }
+
+.nav-links{
+display:none;
 }
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
 <div class="container nav">
 <div class="logo">Service Almaty</div>
-<div>
+
+<div class="nav-links">
 <a href="#services">Услуги</a>
 <a href="#brands">Бренды</a>
 <a href="#gallery">Работы</a>
@@ -257,13 +270,14 @@ font-size:24px;
 </header>
 
 <section class="hero">
-<div class="container hero-content">
 
-<h1>Ремонт профессионального светового и звукового оборудования</h1>
+<div>
+
+<h1>Ремонт концертного света и профессионального звука</h1>
 
 <p>
-Диагностика, обслуживание и ремонт концертной техники любой сложности.
-Световые приборы, усилители мощности, блоки питания, DSP и профессиональная акустика.
+Диагностика и ремонт оборудования любой сложности.
+Световые приборы, усилители мощности, DSP, блоки питания и профессиональная акустика.
 </p>
 
 <a class="btn" href="https://wa.me/77066894205">
@@ -271,9 +285,11 @@ font-size:24px;
 </a>
 
 </div>
+
 </section>
 
 <section id="services">
+
 <div class="container">
 
 <h2 class="section-title">Услуги</h2>
@@ -307,7 +323,7 @@ font-size:24px;
 <ul>
 <li>Ремонт блоков питания</li>
 <li>Замена SMD компонентов</li>
-<li>Поиск КЗ</li>
+<li>Поиск короткого замыкания</li>
 <li>Восстановление плат</li>
 <li>Диагностика</li>
 </ul>
@@ -316,9 +332,11 @@ font-size:24px;
 </div>
 
 </div>
+
 </section>
 
 <section id="brands">
+
 <div class="container">
 
 <h2 class="section-title">Бренды</h2>
@@ -337,49 +355,32 @@ font-size:24px;
 </div>
 
 </div>
+
 </section>
 
 <section id="gallery">
+
 <div class="container">
 
 <h2 class="section-title">Наши работы</h2>
 
 <div class="gallery">
 
-<div class="gallery">
-
-<div class="gallery-item">
-    <img src="images/image.png" alt="">
-</div>
-
-<div class="gallery-item">
-    <img src="images/claypaky.jpg" alt="">
-</div>
-
-<div class="gallery-item">
-    <img src="images/amp1.jpg" alt="">
-</div>
-
-<div class="gallery-item">
-    <img src="images/amp2.jpg" alt="">
-</div>
-
-<div class="gallery-item">
-    <img src="images/lightsky.jpg" alt="">
-</div>
-
-<div class="gallery-item">
-    <img src="images/psu.jpg" alt="">
-</div>
+<img class="gallery-item" src="images/photo1.jpg" alt="">
+<img class="gallery-item" src="images/photo2.jpg" alt="">
+<img class="gallery-item" src="images/photo3.jpg" alt="">
+<img class="gallery-item" src="images/photo4.jpg" alt="">
+<img class="gallery-item" src="images/photo5.jpg" alt="">
+<img class="gallery-item" src="images/photo6.jpg" alt="">
 
 </div>
 
 </div>
 
-</div>
 </section>
 
 <section>
+
 <div class="container">
 
 <h2 class="section-title">Почему выбирают нас</h2>
@@ -387,12 +388,12 @@ font-size:24px;
 <div class="advantages">
 
 <div class="adv">
-<h3>Большой опыт</h3>
-<p>Ремонт профессиональной концертной техники.</p>
+<h3>Опыт</h3>
+<p>Большой опыт ремонта концертного оборудования.</p>
 </div>
 
 <div class="adv">
-<h3>Точная диагностика</h3>
+<h3>Диагностика</h3>
 <p>Профессиональное измерительное оборудование.</p>
 </div>
 
@@ -402,16 +403,18 @@ font-size:24px;
 </div>
 
 <div class="adv">
-<h3>Быстрые сроки</h3>
-<p>Оперативное выполнение ремонта.</p>
+<h3>Сроки</h3>
+<p>Максимально быстрый ремонт техники.</p>
 </div>
 
 </div>
 
 </div>
+
 </section>
 
 <section id="contact">
+
 <div class="container contact">
 
 <h2 class="section-title">Контакты</h2>
@@ -427,13 +430,14 @@ font-size:24px;
 </a>
 
 </div>
+
 </section>
 
 <footer>
 © 2026 Service Almaty
 </footer>
 
-<a class="whatsapp" href="https://wa.me/77066894205">✆</a>
+<a class="whatsapp" href="https://wa.me/77066894205">☎</a>
 
 </body>
 </html>

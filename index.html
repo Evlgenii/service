@@ -3,38 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Service Almaty | Ремонт светового и звукового оборудования</title>
-
-<meta name="description" content="Ремонт профессионального светового и звукового оборудования в Алматы. LightSky, Robe, Claypaky, ACME, DTS, L-Acoustics, d&b audiotechnik.">
-
+<title>ProLight Service Алматы</title>
+<meta name="description" content="Ремонт профессионального светового и звукового оборудования">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+:root{
+--bg:#07090d;--card:#121722;--accent:#00d26a;--text:#fff;--muted:#a7b0bc;
 }
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:#0f1117;
-color:#fff;
-line-height:1.6;
-}
-
-.container{
-width:90%;
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text)}
+.container{width:min(92%,1280px);margin:auto}
+header{position:fixed;top:0;width:100%;backdrop-filter:blur(12px);background:rgba(7,9,13,.8);border-bottom:1px solid #222;z-index:100}
+nav{height:80px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:28px}
+.logo span{color:var(--accent)}
+nav a{color:#fff;text-decoration:none;margin-left:20px}
+.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.6)),url("images/hero.jpg") center/cover}
+ .hero h1{
+font-size:clamp(48px,6vw,92px);
+line-height:0.95;
 max-width:1200px;
-margin:auto;
+font-weight:800;
+letter-spacing:-3px;
 }
+.hero p{max-width:700px;color:var(--muted);margin:24px 0;font-size:20px}
+.btn{display:inline-block;padding:18px 30px;background:var(--accent);color:#000;text-decoration:none;border-radius:12px;font-weight:700}
+section{padding:110px 0}
+.title{text-align:center;font-size:48px;margin-bottom:15px}
+.subtitle{text-align:center;color:var(--muted);margin-bottom:50px}
+.stats,.services,.gallery{display:grid;gap:20px}
+.stats{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:50px}
+.stat,.card{background:var(--card);padding:28px;border-radius:22px;border:1px solid #232a38}
+.stat h3{font-size:42px;color:var(--accent)}
+.services{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card h3{margin-bottom:15px}
+.card li{margin:8px 0;color:var(--muted)}
+.brands{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.brand{padding:12px 18px;background:var(--card);border-radius:999px}
+.gallery{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.gallery img{width:100%;height:260px;object-fit:cover;border-radius:20px;border:1px solid #232a38}
+.contact{background:var(--card);padding:50px;border-radius:28px;text-align:center}
+.phone{font-size:42px;color:var(--accent);font-weight:800;margin:20px 0}
+.wa{position:fixed;right:20px;bottom:20px;width:70px;height:70px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#000;text-decoration:none;font-size:28px;font-weight:700}
+footer{padding:40px;text-align:center;color:#888}
+@media(max-width:768px){
+.hero h1{font-size:42px}
+.title{font-size:34px}
+.phone{font-size:28px}
+nav .links{display:none}
+}
+</style>
+</head>
+<body>
 
-header{
-position:fixed;
+<header>
+<div class="container">
+<nav>
+<div class="logo">Pro<span>Light</span> Service</div>
+<div class="links">
+<a href="#services">Услуги</a>
+<a href="#brands">Бренды</a>
+<a href="#gallery">Работы</a>
+<a href="#contact">Контакты</a>
+</div>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<h1>Ремонт концертного света и профессионального звука</h1>
+<p>Диагностика, ремонт и обслуживание профессионального оборудования. LightSky, Robe, Claypaky, ACME, DTS, L‑Acoustics, d&b audiotechnik и другие бренды.</p>
+<a class="btn" href="https://wa.me/77066894205">Написать в WhatsApp</a>
+
+<div class="stats">
+<div class="stat"><h3>1200+</h3><p>Выполненных ремонтов</p></div>
+<div class="stat"><h3>15+</h3><p>Лет опыта</p></div>
+<div class="stat"><h3>24ч</h3><p>Средняя диагностика</p></div>
+<div class="stat"><h3>100%</h3><p>Проверка под нагрузкой</p></div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<h2 class="title">Услуги</h2>
+<p class="subtitle">Профессиональный ремонт концертного оборудования</p>
+<div class="services">
+<div class="card"><h3>Световое оборудование</h3><ul><li>Moving Head</li><li>Beam / Spot / Wash</li><li>LED приборы</li><li>Стробоскопы</li></ul></div>
+<div class="card"><h3>Звуковое оборудование</h3><ul><li>Усилители мощности</li><li>DSP</li><li>Активная акустика</li><li>Сабвуферы</li></ul></div>
+<div class="card"><h3>Электроника</h3><ul><li>Ремонт БП</li><li>Замена SMD</li><li>Поиск КЗ</li><li>Восстановление плат</li></ul></div>
+</div>
+</div>
+</section>
+
+<section id="brands">
+<div class="container">
+<h2 class="title">Бренды</h2>
+<div class="brands">
+<div class="brand">LightSky</div><div class="brand">ACME</div><div class="brand">DTS</div>
+<div class="brand">Claypaky</div><div class="brand">Robe</div><div class="brand">L‑Acoustics</div>
+<div class="brand">d&b audiotechnik</div><div class="brand">Martin</div><div class="brand">Yamaha</div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+<h2 class="title">Наши работы</h2>
+<div class="gallery">
+<img src="images/photo1.jpg" alt="">
+<img src="images/photo2.jpg" alt="">
+<img src="images/photo3.jpg" alt="">
+<img src="images/photo4.jpg" alt="">
+<img src="images/photo5.jpg" alt="">
+<img src="images/photo6.jpg" alt="">
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="contact">
+<h2 class="title">Контакты</h2>
+<p>Алматы</p>
+<div class="phone">+7 706 689 4205</div>
+<a class="btn" href="https://wa.me/77066894205">Связаться в WhatsApp</a>
+</div>
+</div>
+</section>
+
+<footer>© 2026 ProLight Service</footer>
+<a class="wa" href="https://wa.me/77066894205">WA</a>
+</body>
+</html>position:fixed;
 top:0;
 left:0;
 width:100%;
@@ -71,18 +175,16 @@ text-decoration:none;
 min-height:100vh;
 display:flex;
 align-items:center;
-justify-content:center;
-text-align:center;
-padding:100px 20px;
-
-  background:
-
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-
-url("images/header.png")
-
-center center/cover no-repeat;
-  
+background:
+linear-gradient(
+90deg,
+rgba(0,0,0,.85) 0%,
+rgba(0,0,0,.55) 50%,
+rgba(0,0,0,.2) 100%
+),
+url("images/hero.jpg");
+background-size:cover;
+background-position:center;
 }
 
 .hero h1{
